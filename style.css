@@ -19,6 +19,8 @@ body {
   padding: 0 16px;
 }
 
+/* Header */
+
 .site-header,
 .site-footer {
   text-align: center;
@@ -27,7 +29,7 @@ body {
 
 .site-header {
   padding-top: 28px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 
 .site-kicker {
@@ -39,9 +41,9 @@ body {
 }
 
 .site-header h1 {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   margin-bottom: 6px;
-  color: #b45309;
+  color: #7c2d12;
   font-weight: 700;
 }
 
@@ -51,14 +53,14 @@ body {
 }
 
 main {
-  padding: 16px 0 32px;
+  padding: 0 0 32px;
 }
 
-/* Hero section */
+/* Hero */
 
 .hero {
-  padding: 40px 0 44px;
-  background: radial-gradient(circle at top left, #fef3e7, #fdf7f2 55%, #f3f4ff 100%);
+  padding: 32px 0 40px;
+  background: radial-gradient(circle at top left, #fee9d6, #fdf7f2 55%, #fefce8 100%);
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -69,7 +71,7 @@ main {
   align-items: center;
 }
 
-.hero-left {
+.hero-copy {
   max-width: 520px;
 }
 
@@ -81,18 +83,14 @@ main {
   margin-bottom: 8px;
 }
 
-.hero-left {
-  text-align: left;
-}
-
-.hero-left h2 {
-  font-size: 2.4rem;
+.hero-copy h2 {
+  font-size: 2.2rem;
   line-height: 1.15;
   margin-bottom: 10px;
   color: #7c2d12;
 }
 
-.hero-left p {
+.hero-copy p {
   margin: 0 0 12px;
   line-height: 1.6;
   color: #4b5563;
@@ -108,68 +106,13 @@ main {
   color: #6b7280;
 }
 
-/* Hero right / featured cards */
+/* placeholder za buduću sliku */
 
-.hero-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-featured-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-  width: 100%;
-  max-width: 360px;
-}
-
-.hero-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 12px 16px 16px;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-}
-
-.hero-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.2);
-  border-color: #a5b4fc;
-}
-
-.hero-card-media {
-  width: 100%;
-  height: 90px;
-  border-radius: 14px;
-  margin-bottom: 10px;
-  background: linear-gradient(135deg, #f97316, #4f46e5);
-  opacity: 0.92;
-}
-
-.hero-card-media--mitolyn {
-  background: linear-gradient(135deg, #4f46e5, #f97316);
-}
-
-.hero-card-media--sleep {
-  background: linear-gradient(135deg, #0ea5e9, #6366f1);
-}
-
-.hero-card-media--prostate {
-  background: linear-gradient(135deg, #22c55e, #059669);
-}
-
-.hero-card h3 {
-  margin-bottom: 6px;
-  font-size: 1.05rem;
-  color: #111827;
-}
-
-.hero-card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: #4b5563;
+.hero-visual {
+  min-height: 180px;
+  border-radius: 28px;
+  background: radial-gradient(circle at top left, #fff7ed, #fde68a);
+  box-shadow: 0 22px 60px rgba(251, 146, 60, 0.25);
 }
 
 /* Buttons */
@@ -178,7 +121,7 @@ main {
   display: inline-block;
   padding: 9px 18px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #4f46e5, #fb923c);
+  background: linear-gradient(135deg, #f97316, #f97316);
   color: #ffffff;
   font-weight: 600;
   font-size: 0.9rem;
@@ -212,91 +155,10 @@ main {
   color: #1d4ed8;
 }
 
-/* Section titles */
-
-.section-title {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 4px;
-  color: #0f172a;
-}
-
-.section-subtitle {
-  text-align: center;
-  font-size: 0.95rem;
-  color: #6b7280;
-  margin-bottom: 20px;
-}
-
-/* Product grid */
-
-.product-grid {
-  padding: 8px 0 40px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-
-.product-card {
-  background: #ffffff;
-  border-radius: 22px;
-  padding: 16px 16px 18px;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-}
-
-.product-card img.product-thumb {
-  width: 100%;
-  max-width: 160px;
-  height: 140px;
-  object-fit: contain;
-  border-radius: 16px;
-  background: #fefdf8;
-}
-
-.deal-pill {
-  margin-top: 4px;
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  background: #f97316;
-  color: #fff7ed;
-}
-.deal-pill.secondary {
-  background: #22c55e;
-  color: #ecfdf3;
-}
-
-
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: #e0f2fe;
-  color: #0369a1;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-.tag-main {
-  background: #ecfdf3;
-  color: #15803d;
-}
-
 /* Trust bar */
 
 .trust-bar {
-  padding: 8px 0 4px;
+  padding: 10px 0 6px;
   background: transparent;
   border-bottom: 1px solid rgba(229, 231, 235, 0.8);
 }
@@ -321,10 +183,139 @@ main {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #4f46e5, #fb923c);
+  background: linear-gradient(135deg, #f97316, #f59e0b);
 }
 
-/* Product pages card wrapper */
+/* Section titles */
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Product grid */
+
+.product-grid {
+  padding: 16px 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 16px 16px 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.14);
+  border-color: #fed7aa;
+}
+
+/* zona za sliku – sada je samo blagi gradient dok ne dodaš <img> */
+
+.product-media {
+  width: 100%;
+  max-width: 170px;
+  height: 140px;
+  border-radius: 18px;
+  background: radial-gradient(circle at top, #fefce8, #fee2e2);
+  margin-bottom: 2px;
+}
+
+/* ako dodaš sliku: <img class="product-thumb"> */
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 1.05rem;
+  color: #111827;
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* mali badge za popuste/ponude */
+
+.deal-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #f97316;
+  color: #fff7ed;
+}
+
+.deal-pill.secondary {
+  background: #22c55e;
+  color: #ecfdf3;
+}
+
+/* About section */
+
+.about-offers {
+  margin-top: 26px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-offers h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.about-offers p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Product detail layout (Mitolyn i ostali ostaju isti stil) */
 
 .product-shell {
   background: #ffffff;
@@ -333,8 +324,6 @@ main {
   padding: 28px 26px 32px;
   margin-top: 24px;
 }
-
-/* Product label (badges) */
 
 .product-label {
   display: flex;
@@ -368,8 +357,6 @@ main {
   background: #ecfdf3;
   color: #15803d;
 }
-
-/* Product pages layout (grid) */
 
 .product-layout {
   display: grid;
@@ -455,7 +442,7 @@ main {
   color: #6b7280;
 }
 
-/* Product images */
+/* Product images on detail pages */
 
 .product-hero-image {
   width: 100%;
@@ -488,11 +475,7 @@ main {
     gap: 24px;
   }
 
-  .hero-right {
-    justify-content: flex-start;
-  }
-
-  .hero-left h2 {
+  .hero-copy h2 {
     font-size: 2rem;
   }
 
@@ -509,10 +492,6 @@ main {
 
   .hero {
     padding: 28px 0 32px;
-  }
-
-  .hero-left {
-    text-align: left;
   }
 
   .trust-inner {
