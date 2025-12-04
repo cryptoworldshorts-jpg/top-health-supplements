@@ -279,7 +279,10 @@ main {
   line-height: 1.5;
   color: #444;
   text-align: center;
+  min-height: 3.9em;   /* oko 2.5–3 reda teksta */
+  overflow: hidden;    /* skriven višak teksta */
 }
+
 
 .tag {
   display: inline-block;
