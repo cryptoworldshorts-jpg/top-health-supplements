@@ -98,8 +98,10 @@ main {
 }
 
 .hero-cta {
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px; /* novi razmak ispod dugmeta */
 }
+
 
 .hero-note {
   margin-top: 6px;
