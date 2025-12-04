@@ -269,6 +269,17 @@ main {
   border-top: 1px solid rgba(229, 231, 235, 0.8);
 }
 
+.product-main h2 {
+  color: #111827;
+}
+
+.product-main h3 {
+  margin: 10px 0 6px;
+  font-size: 1.05rem;
+  color: #1f2937;
+}
+
+
 .product-main p {
   line-height: 1.7;
   margin-bottom: 10px;
@@ -379,6 +390,40 @@ main {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .product-label {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.label-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.label-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4f46e5, #fb923c);
+}
+
+.label-pill.secondary {
+  background: #ecfdf3;
+  color: #166534;
+}
 
   .trust-inner {
     justify-content: flex-start;
