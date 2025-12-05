@@ -451,6 +451,14 @@ main {
   color: #111827;
 }
 
+.product-box .btn-small {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 8px 0 14px;  /* razmak iznad i ispod gumba */
+}
+
+
 .product-box ul {
   margin-left: 16px;
   margin-bottom: 10px;
