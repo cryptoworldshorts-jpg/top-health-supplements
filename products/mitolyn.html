@@ -81,7 +81,7 @@
 }
 </script>
 
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -93,17 +93,43 @@
     "url": "https://healthofferreviews.com/products/mitolyn.html",
     "priceCurrency": "USD",
     "price": "49",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
     "shippingDetails": {
       "@type": "OfferShippingDetails",
-      "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"},
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "USD"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 2,
+          "unitText": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 3,
+          "maxValue": 5,
+          "unitText": "DAY"
+        }
+      },
       "doesNotShip": false
     },
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
       "applicableCountry": "US",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-      "merchantReturnDays": 90
+      "merchantReturnDays": 90,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
     }
   },
   "aggregateRating": {
@@ -113,6 +139,7 @@
   }
 }
 </script>
+
 
 
   
